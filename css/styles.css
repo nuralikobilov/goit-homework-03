@@ -22,7 +22,6 @@ body{
     font-weight: 400;
     color: var(--basic-color);
     line-height: 0;
-    margin: 8px;
 }
 p,
 h1,
@@ -31,10 +30,7 @@ h3 {
     margin-top: 0;
     margin-bottom: 0;
 }
-.container-p{
-max-width: 1158px;
-margin: auto;
-}
+
 .container{
     max-width: 1158px;
     padding: 0 15px;
@@ -102,6 +98,7 @@ margin: auto;
     letter-spacing: 0.02em;
     padding-top: 24px;
     padding-bottom: 24px;
+    display: block;
 }
 .social-links .head-link.current{
     color: var(--brand-color);
@@ -136,7 +133,7 @@ margin: auto;
     gap: 40px;
     align-items: center;
     padding-inline-start: 0;
-    margin: 24px 0px 24px 0px;
+    
 }
 .mail{
     color:var(--text-color);
@@ -149,6 +146,7 @@ margin: auto;
     letter-spacing: 0.02em;
     padding-top: 24px;
     padding-bottom: 24px;
+    display: block;
 }
 .mail:hover,
 .mail:focus {
@@ -165,6 +163,7 @@ margin: auto;
     letter-spacing: 0.02em;
     padding-top: 24px;
     padding-bottom: 24px;
+    display: block;
 }
 .phone:hover,
 .phone:focus{
@@ -198,6 +197,7 @@ margin: auto;
     align-items: flex-start;
     padding: 16px 32px;
     margin: auto;
+    border: none;
 }
 .button:hover{
     background-color: var(--back-color);
@@ -224,9 +224,7 @@ background-color: var(--basic-color);
     list-style: none;
     display: flex;
     gap: 24px;
-    margin-block-start: 0;
-    margin-block-end: 0;
-    padding-inline-start: 0;
+ 
 }
 .section-paragraph{
     background-color: var(--gen-color);
@@ -241,10 +239,7 @@ background-color: var(--basic-color);
     margin-bottom: 8px;
 }
 .description-text{
-    margin-block-start: 0;
-    margin-block-end: 0;
-    padding-inline-start: 0;
-    flex-basis: calc((100% - 74px) / 4 );
+    flex-basis: calc((100% - 72px) / 4 );
     }
 .text{
     color: var(--text-color);
@@ -263,18 +258,16 @@ background-color: var(--basic-color);
     font-size: 36px;
     line-height: 1.111;
     text-align: center;
+    padding-bottom: 120px;
+    
 }
 .photo{
     list-style: none;
-    margin-top: 72px;
-    margin-bottom: 120px;
-    padding-inline-start: 0;
-    height: auto;
     display: flex;
     gap: 24px;
 }
 .photo-devices{
-    flex-basis:calc ((100% - 3 * 24px ) / 3);
+    flex-basis:calc((100% - 3 * 24px ) / 3);
 
 }
 .section-team{
@@ -285,6 +278,7 @@ background-color: var(--basic-color);
 }
 .section-devices{
     background-color:var(--gen-color);
+    margin-bottom: 120px;
 }
 .main-team{
     color: var(--dark-color);
@@ -296,7 +290,6 @@ background-color: var(--basic-color);
 .name-team{
     list-style: none;
     margin-top: 72px;
-    padding-inline-start: 0;
     display: flex;
     gap: 24px;
 }
@@ -308,7 +301,7 @@ background-color: var(--basic-color);
 }
 .image-card{
     background-color: var(--gen-color);
-    padding:32px 60px;
+    padding:32px 16px;
     
 }
 .team{
@@ -377,7 +370,7 @@ background-color: var(--basic-color);
     line-height: 1.5;
     display: block;
     margin-top: 16px;
-    width: 264px;
+    max-width: 264px;
 }
 .main-studio{
     background-color: var(--gen-color);
@@ -447,15 +440,16 @@ button-web:focus{
 .list-card{
     list-style: none;
     display: flex;
-    gap: 24px;
+    column-gap: 24px;
     flex-wrap:wrap;
     row-gap: 48px;
     padding-left: 0px;
-    padding-top: 72px;
+    margin-top: 72px;
     text-decoration: none;
+    
 }
 .list-item{
-    flex-basis: calc((100% - 3 * 24px) / 3 );
+    flex-basis: calc((100% - 2 * 24px) / 3 );
     border: 1px solid var(--border-color);
     
 }
@@ -463,6 +457,7 @@ button-web:focus{
     padding-top: 32px;
     padding-bottom:32px;
    padding-left: 16px;
+   padding-right: 16px;
 }
 .list{
     list-style: none;

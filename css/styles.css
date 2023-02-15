@@ -123,7 +123,7 @@ margin: auto;
     gap: 40px;
     align-items: center;
     padding-inline-start: 0;
-    margin: 24px 0px 24px 0px;
+   
 }
 .mail{
     color:var(--text-color);
@@ -136,6 +136,7 @@ margin: auto;
     letter-spacing: 0.02em;
     padding-top: 24px;
     padding-bottom: 24px;
+    display: block;
 }
 .mail:hover,
 .mail:focus {
@@ -152,6 +153,7 @@ margin: auto;
     letter-spacing: 0.02em;
     padding-top: 24px;
     padding-bottom: 24px;
+    display: block;
 }
 .phone:hover,
 .phone:focus{
@@ -227,7 +229,7 @@ background-color: var(--basic-color);
     margin-bottom: 8px;
 }
 .description-text{
-    flex-basis: calc((100% - 74px) / 4 );
+    flex-basis: calc((100% - 72px) / 4 );
     }
 .text{
     color: var(--text-color);
@@ -236,7 +238,6 @@ background-color: var(--basic-color);
     font-style: normal;
     font-size: 16px;
     line-height: 1.5;
-    width: 264px;
     height: 72px;
     
 }
@@ -246,7 +247,7 @@ background-color: var(--basic-color);
     font-size: 36px;
     line-height: 1.111;
     text-align: center;
-    padding-bottom: 120px;
+    margin-bottom: 120px;
 }
 .photo{
     list-style: none;
@@ -266,7 +267,7 @@ background-color: var(--basic-color);
 }
 .section-devices{
     background-color:var(--gen-color);
-    margin-bottom: 120px;
+    padding-bottom: 120px;
 }
 .main-team{
     color: var(--dark-color);
@@ -321,10 +322,7 @@ background-color: var(--basic-color);
     background-color: var(--dark-color);
     padding-top: 100px;
     padding-bottom: 100px;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0px;
-    top: 2283px;
+   
 }
 .footer .footer-logo{
     margin-top: 100px;
@@ -433,7 +431,7 @@ button-web:focus{
     flex-wrap:wrap;
     row-gap: 48px;
     padding-left: 0px;
-    padding-top: 72px;
+    margin-top: 72px;
     text-decoration: none;
 }
 .list-item{
@@ -451,6 +449,11 @@ button-web:focus{
     list-style: none;
     text-decoration: none;
     display: block;
+    cursor: pointer;
+}
+.list:hover,
+.list:focus {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .list-portfolio{
     color: var(--dark-color);
@@ -511,3 +514,4 @@ border-bottom: 1px solid var(--border-color);
 .social-link.current{
     color: var(--brand-color);
 }
+
